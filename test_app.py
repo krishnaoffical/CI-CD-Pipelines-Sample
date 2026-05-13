@@ -24,7 +24,7 @@ class TestApp(unittest.TestCase):
         self.assertAlmostEqual(mul(2,9),18)
 
     def test_mul2(self):
-        self.assertAlmostEqual(mul(12,3),37)
+        self.assertAlmostEqual(mul(12,3),36)
 
 if __name__ == "__main__":
     unittest.main()
