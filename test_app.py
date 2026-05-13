@@ -1,6 +1,7 @@
 import unittest
 from app import add
 from app import sub
+from app import mul
 
 class TestApp(unittest.TestCase):
 
@@ -16,8 +17,14 @@ class TestApp(unittest.TestCase):
     def test_sub1(self):
         self.assertAlmostEqual(sub(-1,9),-10)
 
-    def testsub2(self):
+    def test_sub2(self):
         self.assertAlmostEqual(sub(2,9),-7)
+    
+    def test_mul1(self):
+        self.assertAlmostEqual(mul(2,9),18)
+
+    def test_mul2(self):
+        self.assertAlmostEqual(mul(12,3),36)
 
 if __name__ == "__main__":
     unittest.main()
